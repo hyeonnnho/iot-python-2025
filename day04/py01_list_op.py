@@ -45,6 +45,22 @@ print(arr)
 arr.extend(arr2)
 print(arr)
 
+## append와 extend의 차이
+# append() ['W', 'Y', 'Z', ['A', 'C', 'E']]
+x = ['W', 'Y', 'Z']
+y = ['A', 'C', 'E']
+
+x.append(y)
+print(x)
+
+# extend() ['W', 'Y', 'Z', 'A', 'C', 'E']
+x = ['W', 'Y', 'Z']
+y = ['A', 'C', 'E']
+
+x.extend(y)
+print(x)
+
+
 ## 리스트 정렬(쇼핑몰 낮은 가격순, 높은 가격순, 최신 일자부터...)
 arr = [6, 7, 1, 3, 9, 0, 2, 8]
 print(arr)
