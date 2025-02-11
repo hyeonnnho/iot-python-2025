@@ -196,6 +196,9 @@ https://github.com/user-attachments/assets/6ff11b64-aa51-4e52-826a-4308b3bcff69
 
 
 
+https://github.com/user-attachments/assets/f858174c-3082-4a85-b24b-4018874d01eb
+
+
 - 파이썬 응용
     - 실행 파일 만들기
         - `pyinstaller` 모듈 설치
