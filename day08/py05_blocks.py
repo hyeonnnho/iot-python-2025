@@ -109,18 +109,13 @@ def main():
             # 게임클리어, 종료 로직
             if len(BlOCK) == 0: # 공으로 블럭을 다 없앰
                 Surface.blit(M_CLEAR, ((SCREEN_WIDTH/ 2)-(240/2), (SCREEN_HEIGHT)/2-(50/2)))
-                # is_game_start = False
-                # score = 0
-                # BlOCK = []
-                # BALL = Block((200,200,0), Rect(375, 650, 20, 20), 10) # 스피드 10으로 공 생성
-                # PADDLE = Block((200,200,0), Rect(375,700,100,30)) # 공을 맞출 패달을 생성
-                # # 클래스 생성
-                # # 무지개색 정보
-                # colors = [(255, 0, 0),(255, 165, 0),(255, 255, 0),(0, 255, 0),(0, 0, 255),(75, 0, 130),(238, 130, 238)]
-                # # 초기에 생성될 블럭들(무지개색으로 9x6 = 54개 블록)
-                # for y, color in enumerate(colors, start=0): # y값은 0~6
-                #     for x in range(0,9):
-                #         BlOCK.append(Block(color, Rect(x*80 + 150, y*40+ 40, 60, 20)))                
+                is_game_start = False
+                score = 0
+                BlOCK = []
+                BALL = Block((200,200,0), Rect(375, 650, 20, 20), 10) # 스피드 10으로 공 생성
+                for y, color in enumerate(colors, start=0): # y값은 0~6
+                    for x in range(0,9):
+                        BlOCK.append(Block(color, Rect(x*80 + 150, y*40+ 40, 60, 20)))                
             if BALL.rect.centery > 800 :
                 Surface.blit(M_FAIL, ((SCREEN_WIDTH/ 2)-(240/2), (SCREEN_HEIGHT)/2-(50/2)))
                 is_game_start = False # 게임 종료 후 재시작은 나중에 다시!
