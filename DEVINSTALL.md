@@ -35,7 +35,7 @@ IoT 개발자과정
 
     3. 설치 재부팅 후 아래의 메시지가 출력되면,
 
-
+<img src='./image/db001.png' width=700>
 
     4. powershell에서 아래의 명령어 실행
 
